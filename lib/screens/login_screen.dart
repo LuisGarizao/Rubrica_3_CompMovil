@@ -6,6 +6,7 @@ import '../utils/colors.dart';
 import '../services/auth_service.dart';
 import 'register_screen.dart';
 import 'home_screen.dart';
+// import 'zones_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -71,6 +72,7 @@ class _LoginScreenState extends State<LoginScreen> {
           // Navegar a la pantalla principal
           Navigator.pushReplacement(
             context,
+            // MaterialPageRoute(builder: (context) => const ZonasPage()),
             MaterialPageRoute(builder: (context) => const HomeScreen()),
           );
         }

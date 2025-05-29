@@ -18,10 +18,10 @@ void main() async {
         appId: "1:422806119632:web:3174c0ca3dc73eedc8aad5",
       ),
     );
-    print('✅ Firebase inicializado para Web');
+    // print('✅ Firebase inicializado para Web');
   } else {
     await Firebase.initializeApp();
-    print('✅ Firebase inicializado para móvil');
+    // print('✅ Firebase inicializado para móvil');
   }
 
   runApp(const UrbanGardenApp());
