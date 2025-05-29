@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:huert/screens/participation_screen.dart';
 // import 'package:firebase_auth/firebase_auth.dart';
 // import 'package:cloud_firestore/cloud_firestore.dart';
 import 'zones_screen.dart';
@@ -68,7 +69,10 @@ class _HomeScreenState extends State<HomeScreen> {
             MaterialPageRoute(builder: (context) => const ZonasPage()),
           );
         } else {
-
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const ParticipacionesScreen()),
+          );
         }
       },
       child: Container(

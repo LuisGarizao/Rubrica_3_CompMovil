@@ -7,6 +7,7 @@ class UserModel {
   final String zone;
   final String availableDays;
   final DateTime createdAt;
+  final List<Map<String, dynamic>> participaciones; 
 
   UserModel({
     required this.uid,
@@ -17,6 +18,7 @@ class UserModel {
     required this.zone,
     required this.availableDays,
     required this.createdAt,
+    this.participaciones = const [],
   });
 
   // Convertir a Map para Firestore
@@ -30,6 +32,7 @@ class UserModel {
       'zone': zone,
       'availableDays': availableDays,
       'createdAt': createdAt.toIso8601String(),
+      'participaciones': participaciones,
     };
   }
 
